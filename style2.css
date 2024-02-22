@@ -84,7 +84,10 @@ nav li{
         justify-content: flex-end; /* Alinear el contenido de la barra de navegación a la derecha */
     }
 }
+/* Media Query para pantallas Desktop*/
+@media only screen and (min-width: 981px) {
 
+}
 
 /* Home Main */
 main{
