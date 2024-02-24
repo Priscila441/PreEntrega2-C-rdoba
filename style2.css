@@ -125,6 +125,40 @@ main{
     text-decoration: none;
     color: #ffffff;
 }
+
+ /* Animacion heartbeat
+ * ----------------------------------------*/
+ 
+ @keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
+  .heartbeat {
+	animation: heartbeat 3s linear 2s infinite both;
+}
+.heartbeat:hover{
+    color: black;
+}
+
 .div1{
     display: flex;
     justify-content: space-evenly;
@@ -147,6 +181,7 @@ main{
     height: 350px;
     width: 400px;
 }
+
 /* Pagina contacto*/
 
 .izquierda{
@@ -185,9 +220,6 @@ footer{
 
 
 /* Medias Query*/
-
-
-
 
 /* Media query para pantalla de celular*/
 @media only screen and (max-width: 576px) {
@@ -234,15 +266,15 @@ footer{
         padding: 15px;
     }
 
-    /* FOOTER*/
-
 }
 
 /* Media query para pantalla de tablet */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
+    /* Header */
     .navbar-toggler {
         display: block; /* Mostrar el botón de la hamburguesa en tamaños de pantalla de tablet */
     } 
+    /* MAIN */
     .parrafo{
         padding: 0px;
         margin: 15px;
@@ -257,6 +289,7 @@ footer{
 
 /* Media Query para pantallas Desktop*/
 @media only screen and (min-width: 981px) {
+    /* MAIN */
     #carouselExampleMobile{
         display: none;
     }

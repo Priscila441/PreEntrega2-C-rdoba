@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shampoo 2</title>
+    <!--Posicionamiento SEO-->
+    <!--Meta-->
+    <meta name="description" content="Descubre nuestra colección de shampoos sólidos en [Nombre de tu Página]. Desde el refrescante Shampoo Sólido de Naranja hasta el relajante Shampoo Sólido de Lavanda, encuentra el cuidado natural perfecto para tu cabello. ¡Explora ahora y disfruta de una limpieza suave y nutritiva!">
+    <meta name="keywords" content="shampoo sólido, naranja, rosas, lavanda, menta, eucalipto, cabello, cuidado capilar, productos naturales, limpieza suave, fragancia natural, champú sólido, cabello saludable"/>
+    <!--Open Graph-->
+    <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <!--Titulo-->
+    <title>Tómate un Baño de Frescura: Shampoos Sólidos Naturales</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./imagenes/logoPequeño3.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="/style2.css">
     <!--Google Fonts-->
@@ -14,6 +25,8 @@
     <!--Bootsrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body class="grid"><!--Grid-->
     <header >
@@ -58,13 +71,13 @@
         <section>
             <h2 class="espaciado titulo izquierda">Shampoos sólidos</h2>
             <div class="secciones izquierda fondo">
-                <div>
+                <div data-aos="fade-right">
                     <img class="img-productos" src="../imagenes/jabonDeNaranja.jpg" alt="imagen de shampoo de naranja">
                 </div>
                 <div class="izquierda parrafo">
                     <h2 class="espaciado">Shampoo Sólido de Naranja:</h2>
                     <p>Despierta tus sentidos con este champú sólido de naranja, lleno de energía cítrica y revitalizante. La frescura de la naranja limpia profundamente el cabello y el cuero cabelludo, eliminando la acumulación de impurezas y dejando una sensación refrescante. La fórmula suave y nutritiva deja el cabello limpio, suave y lleno de vitalidad.</p>
-                    <button class="mi-boton" type="submit" class="btn btn-primary">LEER MÁS</button>
+                    <button class="mi-boton heartbeat" type="submit" class="btn btn-primary">COMPRAR</button>
                 </div>
             </div>
         </section>
@@ -73,22 +86,22 @@
                 <div class="izquierda parrafo">
                     <h2 class="espaciado">Shampoo Sólido de Rosas:</h2>
                     <p>Este champú sólido de rosas es una indulgencia floral para tu cabello. Infundido con el aroma embriagador de las rosas, este champú limpia suavemente el cabello y el cuero cabelludo, dejándolos frescos y revitalizados. La fórmula natural y nutritiva fortalece el cabello, dejándolo suave, brillante y con un delicado perfume de rosas.</p>
-                    <button class="mi-boton" type="submit" class="btn btn-primary">LEER MÁS</button>
+                    <button class="mi-boton heartbeat" type="submit" class="btn btn-primary">COMPRAR</button>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <img class="img-productos" src="../imagenes/jabon-de-rosas-casero-serezniy.jpg" alt="imagen de shampoo de rosas">
                 </div>
             </div>
         </section>
         <section>
             <div class="secciones izquierda fondo">
-                <div>
+                <div data-aos="fade-right">
                     <img class="img-productos" src="../imagenes/shampooDeLavanda.jpg" alt="imagen de shampoo de lavanda">
                 </div>
                 <div class="izquierda parrafo">
                     <h2 class="espaciado">Shampoo Sólido de Lavanda:</h2>
                     <p>Sumérgete en un oasis de calma con este champú sólido de lavanda. El aroma relajante de la lavanda envuelve tus sentidos mientras limpia suavemente el cabello y el cuero cabelludo. La fórmula suave y equilibrada nutre el cabello, dejándolo limpio, suave y perfumado con la fragancia relajante de la lavanda.</p>
-                    <button class="mi-boton" type="submit" class="btn btn-primary">LEER MÁS</button>
+                    <button class="mi-boton heartbeat" type="submit" class="btn btn-primary">COMPRAR</button>
                 </div>
             </div>
         </section>
@@ -97,9 +110,9 @@
                 <div class="izquierda parrafo">
                     <h2 class="espaciado">Shampoo Sólido de Menta y Eucalipto:</h2>
                     <p>Refresca tu cabello y tu mente con este champú sólido de menta y eucalipto. La combinación refrescante de menta y eucalipto limpia profundamente el cabello y el cuero cabelludo, dejándolos revitalizados y energizados. La fórmula estimulante y rejuvenecedora deja el cabello limpio, suave y con una sensación de frescura duradera.</p>
-                    <button class="mi-boton" type="submit" class="btn btn-primary">LEER MÁS</button>
+                    <button class="mi-boton heartbeat" type="submit" class="btn btn-primary">COMPRAR</button>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <img class="img-productos" src="../imagenes/shampooDeMenta.jpg" alt="imagen de shampoo de menta y eucalipto">
                 </div>
             </div>
@@ -123,6 +136,9 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--Animaciones-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>AOS.init();</script>
     </footer>
 </body>
 </html>
